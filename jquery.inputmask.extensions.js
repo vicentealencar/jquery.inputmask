@@ -1,12 +1,13 @@
 /*
-Input Mask plugin extentions
-http://github.com/RobinHerbots/jquery.inputmask
-Copyright (c) 2010 Robin Herbots
-Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
+    Input Mask plugin extentions
+    http://github.com/RobinHerbots/jquery.inputmask
+    Copyright (c) 2010 Robin Herbots
+    Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
 
-Optional extentions on the jquery.inputmask base
+    Optional extentions on the jquery.inputmask base
 */
-(function($) {
+
+define(["jquery", "./jquery.inputmask"], function($) {
     //extra definitions
     $.extend($.inputmask.defaults.definitions, {
         'h': { //hours
@@ -147,4 +148,4 @@ Optional extentions on the jquery.inputmask base
                 autoUnmask: false
             }
         });
-    })(jQuery);
+    });
